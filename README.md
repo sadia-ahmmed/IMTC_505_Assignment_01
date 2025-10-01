@@ -12,16 +12,8 @@ Navigate a player cube through obstacles while hazards react to you. The scene s
 - Collision feedback color change 
 - Collision feedback: audio
 - **Bonus:** color-changing sphere trail that auto-cleans + camera follow
-- 
-**Video link:** https://youtu.be/8AE3NWc15ow
-  
----
 
-## Quick Start
-1. **Unity:** 2021.3 LTS or newer.
-2. **Clone** this repo and open the folder with `Assets/`, `Packages/`, `ProjectSettings/`.
-3. Open the main scene (e.g., `Scenes/ObstacleDodge.unity`).
-4. Press **Play**.
+**Video link:** https://youtu.be/8AE3NWc15ow
 
 ---
 
@@ -31,7 +23,7 @@ Navigate a player cube through obstacles while hazards react to you. The scene s
 ---
 
 
-### Required 5 Interactions
+## Required 5 Interactions
 
 - **Something that changes position, rotation, or scale**  
   → **Player movement** (WASD/Arrow keys) and **Spinner** obstacles that rotate continuously.
