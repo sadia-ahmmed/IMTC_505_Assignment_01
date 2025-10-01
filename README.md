@@ -9,10 +9,12 @@ Navigate a player cube through obstacles while hazards react to you. The scene s
 - Keyboard movement (physics-aware)
 - Timed falling obstacles
 - Rotating obstacles
-- Collision feedback (color + sound)
-- Triggered homing projectiles
+- Collision feedback color change 
+- Collision feedback: audio
 - **Bonus:** color-changing sphere trail that auto-cleans + camera follow
-
+- 
+**Video link:** https://youtu.be/8AE3NWc15ow
+  
 ---
 
 ## Quick Start
@@ -30,20 +32,21 @@ Navigate a player cube through obstacles while hazards react to you. The scene s
 
 
 ### Required 5 Interactions
-1. **Keyboard input + movement (physics)**  
-   The player moves using a `Rigidbody` (no tunneling through colliders).
 
-2. **Timed event + physics**  
-   A **Dropper** appears after a delay and falls using gravity.
+- **Something that changes position, rotation, or scale**  
+  → **Player movement** (WASD/Arrow keys) and **Spinner** obstacles that rotate continuously.
 
-3. **Rotation/animation**  
-   **Spinner** obstacles continuously rotate on configurable axes.
+- **Something that changes colors, visuals, or animations**  
+  → **Color-changing sphere trail** behind the player and **obstacles/walls turn red on hit**.
 
-4. **Collision feedback (visual + audio)**  
-   When the player collides with an obstacle, its material turns **red** and a **hit sound** plays.
+- **Something happens when you press a key on the keyboard**  
+  → **Player moves with WASD/Arrow keys** (keyboard input driving motion).
 
-5. **Trigger-based behavior + motion**  
-   Entering a trigger fires **hidden projectiles** that become visible and home toward the player, then self-destruct on proximity.
+- **Something physics-related**  
+  → **Dropper** element **falls with gravity after a delay**.
+
+- **Something audio related**  
+  → **Hit sound** plays when the player collides with an obstacle.
 
 ### Bonus Objective
 - **Trail of spheres:** While moving, the player spawns small spheres that **change color** and **auto-destroy after ~5s**.  
@@ -69,7 +72,5 @@ Navigate a player cube through obstacles while hazards react to you. The scene s
 
 
 
-
-**Video link:** https://youtu.be/8AE3NWc15ow 
 
 
