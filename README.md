@@ -60,9 +60,7 @@ Navigate a player cube through obstacles while hazards react to you. The scene s
 - **`ObjectHit.cs`**  
   On collision with the Player: changes the material color to **red**, tags the object as `Hit`, and plays an attached **AudioSource**.
 
-
-
-
+PS: The position of the dropper object is fixed from the video 
 
 
 
