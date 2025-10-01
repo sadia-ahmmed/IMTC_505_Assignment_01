@@ -15,6 +15,7 @@ public class Spinner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Rotate the object around its local X, Y, and Z axes it is applied to the spinner object to create interesting obstacle 
         transform.Rotate(spinX, spinY, spinZ );
     }
 }

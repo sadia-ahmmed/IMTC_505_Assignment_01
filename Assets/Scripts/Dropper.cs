@@ -10,6 +10,7 @@ public class Dropper : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //initially the mesh renderer is disabled
         dropperMeshRenderer = GetComponent<MeshRenderer>();
         dropperMeshRenderer.enabled = false;
 
@@ -24,7 +25,7 @@ public class Dropper : MonoBehaviour
         if (Time.time > timeToWait)
         {
 
-            // Debug.Log("Lookout Below!");
+            // The mesh renderer is enabled and gravity is applied to the rigidbody after 5 seconds for it to fall
             dropperMeshRenderer.enabled = true;
             rb.useGravity = true;
              
